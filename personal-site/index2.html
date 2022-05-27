@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+            <style>
+                ul{
+                    margin-top: 0;
+
+                    border-color: aqua;
+                    border-style: dashed;
+                    border-width: 5px;
+                }
+            </style>
+            
+    </head>
+    <body>
+
+        <main>
+        <button>
+            Here is the button
+        </button>
+        <p style="margin-bottom: 0;">My food:</p>
+        <ul>
+            <li>
+                Borsch
+            </li>
+            <li>Any other</li>
+        </ul>
+
+        
+        <label>Enter temperature in Fahrenheit
+            <input id="temp-input" type="number" step="5" 
+            placeholder="100" min="1" max="100">
+        </label>
+        <button id="convert-button">Convert</button>
+        <p id="result">Result: </p>
+        </main>
+
+
+        <script>
+            const button = document.getElementById('convert-button');
+            
+            const temp = document.getElementById('temp-input');
+            const p = document.getElementById('result');
+            function convert(){
+                console.log(parseInt(temp.value));
+                p.innerText = `Result: ${temp.value*(5/9)}` // Interpolation
+            }
+            button.addEventListener('click', convert);
+        </script>
+
+
+
+    </body>
+
+</html>
