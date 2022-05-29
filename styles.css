@@ -1,3 +1,31 @@
 body{
     background-color: azure;
 }
+
+li {
+    background-color: antiquewhite;
+    
+}
+header {
+    background-color: aqua;
+}
+
+#about-link {
+    background-color: aquamarine;
+    margin: 10px;
+
+}
+#contact-link {
+    background-color: beige;
+    margin: 10px;
+    padding: 10px 10px 0px 10px;
+
+    border-radius: 5px;
+    border-style: dashed;
+    border-width: 5px;
+}
+
+a:hover{
+    color: red;
+    font-size: 40px;
+}
