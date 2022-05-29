@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Portfolio</title>
+
+    <!-- CSS + JS links -->
     <link rel="stylesheet" href="styles.css"/>
+    
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="personal website Arsen Mutalapov">
+    <meta name="description" content="The website about Arsen Mutalapov">
+    <meta name="author" content="Arsen Mutalapov">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 </head>
 
 <body>
     <header>
-        <h1>Arsen Mutalapov</h1>
+            <h1>Arsen Mutalapov</h1>
+        
         <nav>
-            <a id="about-link" href="about.html">About</a>
-            <a id="contact-link"href="about.html">Contact</a>
+            <a class="menu-item"" id="about-link" href="about.html">About</a>
+            <a class="menu-item" id="contact-link"href="about.html">Contact</a>
         </nav>
+        
     </header>
     
     <main>
+        <h2>Hello everyone and welcome to my personal website</h2>
         <p>Social links:</p>
         <ul style="background-color: grey;">
             <img src="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.5/1646738284779/Microsoft.VisualStudio.Services.Icons.Default"/>
@@ -23,12 +37,14 @@
 
         </ul>
     </main>
+    <br>
     <footer>
+        <label>Social media</label>
         <nav id="div-social-media" >
             <ul id="social-media-list">
                 <li><a href="styles.css" download="DownloadThis.css" target="_blank">VK</a></li>
-                <li>Telegram</li>
-                <li><img src="./images/youtube.png" alt="YouTube icon"></li>
+                <li><img id="youtube-inverse-image" src="./images/youtube-inverse.png" alt="YouTube icon"></li>
+                <li><img id="youtube-image" src="./images/youtube.png" alt="YouTube icon"></li>
             </ul>
         </nav>
     </footer>

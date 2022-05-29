@@ -1,31 +1,68 @@
+*{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
 body{
-    background-color: azure;
+    background-color: white;
 }
 
 li {
     background-color: antiquewhite;
+    width: 20mm;
     
+}
+body{
+    padding: 0;
+    margin: 0;
 }
 header {
     background-color: aqua;
-}
 
-#about-link {
-    background-color: aquamarine;
-    margin: 10px;
+    background: linear-gradient(45deg, #c41440, #05a4fa);
 
-}
-#contact-link {
-    background-color: beige;
-    margin: 10px;
-    padding: 10px 10px 0px 10px;
+    text-align: center;
+    margin: 0;
 
-    border-radius: 5px;
-    border-style: dashed;
     border-width: 5px;
+    border-style: solid;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    
 }
+
+h1{
+    margin: 0;
+    margin-bottom: 5px;
+    
+}
+
+.menu-item {
+    color: black;
+    text-decoration: none;
+
+    border-style: solid;
+    border-width: 2px;
+
+    
+}
+
+.menu-item:hover {
+    color: #c41440;
+}
+
 
 a:hover{
-    color: red;
-    font-size: 40px;
+    color: #c41440;
+    ;
+}
+
+#youtube-image {
+    height: 10%;
+    width: 10%;
+}
+#youtube-inverse-image {
+    height: 10%;
+    width: 10%;
 }
