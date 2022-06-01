@@ -1,5 +1,10 @@
 *{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Comic Sans", cursive; 
+    /* Pretty cool font as "notes" */
+}
+
+#social-media-label{
+    font-family: "Ink Free", "MV Boli", sans-serif;
 }
 
 body{
@@ -42,13 +47,16 @@ h1{
     color: black;
     text-decoration: none;
 
-    border-style: solid;
+
+    border-style: inset ;
     border-width: 2px;
+    border-radius: 4px;
 
     
 }
 
 .menu-item:hover {
+    border-style: outset;
     color: #c41440;
 }
 
