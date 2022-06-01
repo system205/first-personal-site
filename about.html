@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>About</title>
+
+    <!-- CSS + JS links -->
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="animations.css"/>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="personal website Arsen Mutalapov">
+    <meta name="description" content="The website about Arsen Mutalapov">
+    <meta name="author" content="Arsen Mutalapov">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 </head>
 
 <body>
     <header>
-        <h1>Arsen Mutalapov</h1>
+        <a id="header-title" href="/"><h1>Arsen Mutalapov</h1></a>
         <nav>
-            <a href="/index.html">Back</a>
+            <a class="menu-item"" id="about-link" href="about.html">About</a>
+            <a class="menu-item" id="contact-link"href="about.html">Contact</a>
         </nav>
+        
     </header>
+    <main>
+        <h2>Here are some information about me and my personality</h2>
+        <p>I`m very friendly, outgoung and social person. <br>
+            See me in different social media down below to chat or have a call.
+            <br>I will update the information on the site. Keep following ^_^
+        </p>
+       
+    </main>
+    <footer>
+        <div id="div-social-media">
+            <label id="social-media-label">Social media</label>
+            <nav id="nav-social-media" >
+                <a class="media-link" href="https://vk.com/arsen205" target="_blank">
+                    <img id="VK-img" class="media-image" src="./images/vk.png" title="VK"  alt="VK">
+                </a>
+                <a  class="media-link" href="https://www.youtube.com/channel/UCn2PB--35GVCPU_CH7JUlkQ/videos" target="_blank">
+                    <img id="YouTube-img" class="media-image" src="./images/youtube.png" title="YouTube"  alt="YouTube">
+                </a>
+                <a class="media-link" href="https://t.me/system205" target="_blank">
+                    <img id="Telegram-img" class="media-image" src="./images/telegram.png" title="Telegram"  alt="Telegram">
+                </a>
+                <a class="media-link" href="https://discord.gg/cWRF6yFfVd" target="_blank">
+                    <img id="Discord-img" class="media-image" src="./images/discord.png" title="Discord"  alt="Discord">
+                </a>
+                <!-- <li><div id="exp"><img id="youtube-image" src="./images/youtube.png" alt="YouTube icon"></div></li> -->
+            </nav>
+        </div>
+    </footer>
 
 </body>
 </html>

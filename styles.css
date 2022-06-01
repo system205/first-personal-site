@@ -58,6 +58,8 @@ header {
 main{
     margin: 0;
     width: 100%;
+
+    text-align: center;
     
 }
 footer{
@@ -93,7 +95,7 @@ p{
 }
 
 .media-image{
-    width: 10%;
+    width: 50px;
 }
 
 .media-link{
@@ -113,4 +115,8 @@ p{
     font-size: 125%;
 }
 
+#header-title{
+    text-decoration: none;
+    color: #000;
+}
 
