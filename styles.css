@@ -1,8 +1,5 @@
 *{
     font-family: "Comic Sans MS", "Comic Sans", cursive; 
-    /* Pretty cool font as "notes" */
-
-    
 }
 
 #social-media-label{
@@ -37,58 +34,8 @@ h1{
 
 a:hover{
     color: #c41440;
-    ;
 }
 
-#youtube-image {
-    /* height: 100px;
-    width: 100px;
-    transition-duration: .5s;
-
-     */
-
-    visibility: hidden;
-}
-#youtube-inverse-image {
-    height: 10%;
-    width: 10%;
-
-    content: url("images/youtube.png");
-
-    box-shadow: 5px 5px 15px yellow;
-}
-
-/* #youtube-image:hover {
-    height: 110px;
-    width: 110px;
-
-    transition-duration: .5s;
-} */
-
-/* @keyframes youtubeSwipe {
-    50%{transform: rotateY(180deg);}
-    60%{background-image: url("images/youtube-inverse.png");}
-    50%{transform: rotateY(180deg);}
-}
-
-#exp{
-   
-    background-image: url("images/youtube.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    width: 100px;
-    height: 90px;
-
-} */
-
-#exp {
-
-    animation: youtubeSwipe;
-    animation-duration: 5s;
-    animation-delay: 0.2s;
-    animation-iteration-count: infinite;
-}
 
 header {
     
@@ -141,10 +88,6 @@ p{
     padding: 0 10px;
 }
 
-#nav-social-media{
-    border: 2px solid red;
-
-}
 #div-social-media{
     text-align: center;
 }
