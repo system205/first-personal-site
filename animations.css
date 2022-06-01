@@ -1,0 +1,48 @@
+
+@keyframes mediaInverseYouTube {
+    50%{transform: rotateY(180deg);}
+    50%{content: url("./images/youtube-inverse.png");} 
+    100%{transform: rotateY(0deg);}
+}
+
+#YouTube-img {
+    animation: mediaInverseYouTube;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mediaInverseVK {
+    50%{transform: rotateY(180deg);}
+    50%{content: url("./images/vk-inverse.png");}
+    100%{transform: rotateY(0deg);}
+}
+
+#VK-img {
+    animation: mediaInverseVK;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mediaInverseTelegram {
+    50%{transform: rotateY(180deg);}
+    50%{content: url("./images/telegram-inverse.png");}
+    100%{transform: rotateY(0deg);}
+}
+
+#Telegram-img {
+    animation: mediaInverseTelegram;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mediaInverseDiscord {
+    50%{transform: rotateY(180deg);}
+    50%{content: url("./images/discord-inverse.png");}
+    100%{transform: rotateY(0deg);}
+}
+
+#Discord-img {
+    animation: mediaInverseDiscord;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}

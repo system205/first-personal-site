@@ -6,7 +6,7 @@
 
     <!-- CSS + JS links -->
     <link rel="stylesheet" type="text/css" href="styles.css"/>
-    
+    <link rel="stylesheet" type="text/css" href="animations.css"/>
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="keywords" content="personal website Arsen Mutalapov">
@@ -26,28 +26,42 @@
         </nav>
         
     </header>
-    
     <main>
         <h2>Hello everyone and welcome to my personal website</h2>
-        <p>Social links:</p>
-        <ul style="background-color: grey;">
-            <img src="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.5/1646738284779/Microsoft.VisualStudio.Services.Icons.Default"/>
-            <il style="background-color: red;">VK</il>
-            <il>Youtube</il>
-
-        </ul>
+        <p>My friends call me "Arsen"</p>
+       
     </main>
-    <br>
     <footer>
-        <label id="social-media-label">Social media</label>
-        <nav id="div-social-media" >
-            <ul id="social-media-list">
-                <li><a href="styles.css" download="DownloadThis.css" target="_blank">VK</a></li>
-                <li><img id="youtube-inverse-image" src="./images/youtube-inverse.png" alt="YouTube icon"></li>
-                <li><img id="youtube-image" src="./images/youtube.png" alt="YouTube icon"></li>
-            </ul>
-        </nav>
+        <div id="div-social-media">
+            <label id="social-media-label">Social media</label>
+            <nav id="nav-social-media" >
+                <a class="media-link" href="https://vk.com/arsen205" target="_blank">
+                    <img id="VK-img" class="media-image" src="./images/vk.png" title="VK"  alt="VK">
+                </a>
+                <a  class="media-link" href="https://www.youtube.com/channel/UCn2PB--35GVCPU_CH7JUlkQ/videos" target="_blank">
+                    <img id="YouTube-img" class="media-image" src="./images/youtube.png" title="YouTube"  alt="YouTube">
+                </a>
+                <a class="media-link" href="https://t.me/system205" target="_blank">
+                    <img id="Telegram-img" class="media-image" src="./images/telegram.png" title="Telegram"  alt="Telegram">
+                </a>
+                <a class="media-link" href="https://discord.gg/cWRF6yFfVd" target="_blank">
+                    <img id="Discord-img" class="media-image" src="./images/discord.png" title="Discord"  alt="Discord">
+                </a>
+                <!-- <li><div id="exp"><img id="youtube-image" src="./images/youtube.png" alt="YouTube icon"></div></li> -->
+            </nav>
+        </div>
     </footer>
+
+    <script>
+        let initialTitle = document.title;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden){
+                document.title = "Hidden"
+            } else {
+                document.title = initialTitle
+            }
+        });
+    </script>
 
 </body>
 </html>
