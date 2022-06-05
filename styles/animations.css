@@ -1,7 +1,7 @@
 
 @keyframes mediaInverseYouTube {
     50%{transform: rotateY(180deg);}
-    50%{content: url("./images/youtube-inverse.png");} 
+    50%{content: url("../images/youtube-inverse.png");} 
     100%{transform: rotateY(0deg);}
 }
 
@@ -13,7 +13,7 @@
 
 @keyframes mediaInverseVK {
     50%{transform: rotateY(180deg);}
-    50%{content: url("./images/vk-inverse.png");}
+    50%{content: url("../images/vk-inverse.png");}
     100%{transform: rotateY(0deg);}
 }
 
@@ -25,7 +25,7 @@
 
 @keyframes mediaInverseTelegram {
     50%{transform: rotateY(180deg);}
-    50%{content: url("./images/telegram-inverse.png");}
+    50%{content: url("../images/telegram-inverse.png");}
     100%{transform: rotateY(0deg);}
 }
 
@@ -37,7 +37,7 @@
 
 @keyframes mediaInverseDiscord {
     50%{transform: rotateY(180deg);}
-    50%{content: url("./images/discord-inverse.png");}
+    50%{content: url("../images/discord-inverse.png");}
     100%{transform: rotateY(0deg);}
 }
 

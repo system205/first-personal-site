@@ -5,8 +5,10 @@
     <title>Portfolio</title>
 
     <!-- CSS + JS links -->
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <link rel="stylesheet" type="text/css" href="animations.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/animations.css"/>
+
+    
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="keywords" content="personal website Arsen Mutalapov">
@@ -18,17 +20,16 @@
 
 <body>
     <header>
-            <h1>Arsen Mutalapov</h1>
-        
-        <nav>
+        <h1 id="myName-text">Arsen Mutalapov</h1>
+        <nav id="nav-buttons">
             <a class="menu-item"" id="about-link" href="about.html">About</a>
             <a class="menu-item" id="contact-link" href="/">Contact</a>
         </nav>
         
     </header>
     <main>
-        <h2>Hello everyone and welcome to my personal website</h2>
-        <p>My friends call me "Arsen"</p>
+        <h2 id="main-title">Hello everyone and welcome to my personal website</h2>
+        <p id="main-p">My friends call me "Arsen"</p>
        
     </main>
     <footer>
@@ -47,7 +48,6 @@
                 <a class="media-link" href="https://discord.gg/cWRF6yFfVd" target="_blank">
                     <img id="Discord-img" class="media-image" src="./images/discord.png" title="Discord"  alt="Discord">
                 </a>
-                <!-- <li><div id="exp"><img id="youtube-image" src="./images/youtube.png" alt="YouTube icon"></div></li> -->
             </nav>
         </div>
     </footer>
@@ -62,6 +62,7 @@
             }
         });
     </script>
+    <script src="scripts/js.js"></script>
 
 </body>
 </html>
