@@ -38,8 +38,6 @@ a:hover{
 
 
 header {
-    
-    background: linear-gradient(45deg, #c41440, #05a4fa);
     background: linear-gradient(165deg, #1B1B1B, #E1E1E1, #F3F3F3);
 
     text-align: center;
@@ -48,38 +46,34 @@ header {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     
-
-    width: 100%;
-
-    text-size-adjust: 10%;
-    
-    
 }
 main{
     margin: 0;
-    width: 100%;
+   
 
     text-align: center;
+    min-height: 400px;
     
+    flex: 1;
+   
 }
 footer{
     background:linear-gradient(165deg, #F3F3F3, #E1E1E1,#1B1B1B );
 
     border-top-width: 2px;
     border-top-style: solid;
-   
-
-    position: absolute;
-    bottom: 0;
-   
-    width: 100%;
-
 }
 
 body{
     background-color: whitesmoke;
     margin: 0;
 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+html{
+    height: 100%;
 }
 
 h2{
