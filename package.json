@@ -1,0 +1,22 @@
+{
+  "name": "system205.github.io",
+  "version": "1.0.0",
+  "description": "The personal website as a project for Frontend Web Development course",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/system205/system205.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/system205/system205.github.io/issues"
+  },
+  "homepage": "https://github.com/system205/system205.github.io#readme",
+  "devDependencies": {
+    "rollup": "^2.75.6"
+  }
+}
