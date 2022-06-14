@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/system205/system205.github.io#readme",
   "devDependencies": {
-    "rollup": "^2.75.6"
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "rollup": "^2.75.6",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3"
   }
 }
