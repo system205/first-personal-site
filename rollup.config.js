@@ -8,7 +8,7 @@ dotenv.config();
 
 
 export default {
-    input: './src/main.js',
+    input: './src/main.ts',
     output: { file: './scripts/bundle.js' },
     plugins: [
         resolve({ browser: true }),
