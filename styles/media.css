@@ -1,0 +1,11 @@
+@media print {
+    #quote-slider {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #quote-slider {
+        max-width: 95%;
+    }
+}
