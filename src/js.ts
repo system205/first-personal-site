@@ -1,56 +1,48 @@
 
-export default () => {
-    console.log('Hello')
-    let quote = '&copy';
-    let author = quote;
-    const token = '35174d0b64c5690e2e2fce564c92be0b';
+type factT = {
+    text: string,
+    number: number
+}
 
+export default () => {
+    const fact: factT = { text: "", number: 0 };
 
     onload = async () => {
-        console.log('world')
-        const slider = document.getElementById('quote-slider');
+        const slider = document.getElementById('quote-slider') as HTMLDivElement;
         if (slider == null) throw new Error('Cannot find the fact element');
 
         slider.style.display = "none";
-        await setQuote();
+        await setFact();
         slider.style.display = 'flex';
     }
 
-    async function setQuote() {
-        let quoteText;
-        let author;
+    async function setFact() {
         try {
-            const response = await fetch('https://favqs.com/api/quotes', {
-                method: 'GET',
-                headers: {
-                    Authorization: `Token token="${token}"`
-                }
-            });
-            const data = await response.json();
-
-            quoteText = data.quotes[0].body;
-            author = data.quotes[0].author;
+            const response = await fetch('http://numbersapi.com/random/math');
+            const data: string[] = (await response.text()).split(" is ");
+            fact.text = data[1];
+            fact.number = parseInt(data[0]);
 
         } catch (e) {
-            quoteText = '500';
-            author = 'Server';
+            fact.text = 'Server';
+            fact.number = 500;
         }
 
 
-        const quoteField = document.getElementById('quote');
-        const quoteAuthor = document.getElementById('quote-author');
+        const quoteField = document.getElementById('quote') as HTMLParagraphElement;
+        const quoteAuthor = document.getElementById('quote-author') as HTMLLabelElement;
 
         if (quoteField == null || quoteAuthor == null) throw new Error('Cannot find the fact element');
 
-        quoteField.innerText = '\u00AB' + quoteText + '\u00BB';
-        quoteAuthor.innerText = '\u00A9' + author;
+        quoteField.innerText = '\u00AB' + fact.text + '\u00BB';
+        quoteAuthor.innerText = 'is ' + fact.number;
 
     }
 
-    const buttonNext = document.getElementById('next-quote-btn');
+    const buttonNext = document.getElementById('next-quote-btn') as HTMLButtonElement;
     if (buttonNext == null) throw new Error('Cannot find the fact element');
 
-    buttonNext.addEventListener('click', setQuote);
+    buttonNext.addEventListener('click', setFact);
 
 }
 
