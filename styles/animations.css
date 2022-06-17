@@ -33,7 +33,7 @@
 }
 
 #VK-img {
-    animation: mediaSInverseVK;
+    animation: mediaInverseVK;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
