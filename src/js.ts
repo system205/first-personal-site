@@ -1,8 +1,8 @@
 
 export default () => {
 
-    let quote: string = '&copy';
-    let author: string = quote;
+    let quote= '&copy';
+    let author = quote;
     const token = '35174d0b64c5690e2e2fce564c92be0b';
 
 
@@ -17,19 +17,19 @@ export default () => {
     }
 
     async function setQuote(){
-        let quoteText: string;
-        let author: string;
+        let quoteText;
+        let author;
         try {
-            const data = await fetch('https://favqs.com/api/quotes', {
+            const response = await fetch('https://favqs.com/api/quotes', {
                 method: 'GET',
                 headers:{
                     Authorization: `Token token="${token}"`
                 }
             });
-            const json: {quotes: [{body:string, author:string}]} = await data.json();
+            const data = await response.json();
             
-            quoteText = json.quotes[0].body;
-            author = json.quotes[0].author;
+            quoteText = data.quotes[0].body;
+            author = data.quotes[0].author;
 
         } catch (e) {
             quoteText = '500'; 
