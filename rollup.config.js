@@ -12,10 +12,10 @@ export default {
     output: { file: './scripts/bundle.js' },
     plugins: [
         resolve({ browser: true }),
-        typescript(),
+        typescript({ module: "ESNext" }),
         replace({
             values: {
-                'process.env.SERVER_URL' : JSON.stringify(process.env.SERVER_URL),
+                'process.env.SERVER_URL': JSON.stringify(process.env.SERVER_URL),
             },
             preventAssignment: true,
         }),
